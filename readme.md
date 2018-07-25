@@ -24,9 +24,11 @@ export default class App extends React.Component {
                         Some text inside modal goes here...
                     </Modal>
                 ) : null}
-								<div>Some text below modal</div>
+				<div>Some text below modal</div>
             </div>
         );
     }
 }
 ```
+
+I will keep on adding more animations to the library. All PR requests are welcome!
