@@ -18,7 +18,7 @@ export default class App extends React.Component {
             <div>
                 {showModal ? (
                     <Modal
-                        closeModal={() => this.setState({ showModal: false })}
+                        closemodal={() => this.setState({ showModal: false })}
                     >
                         Some text inside modal goes here...
                     </Modal>
