@@ -32,7 +32,7 @@ export default class Modal extends React.Component {
                             onClick={() =>
                                 this.setState({ animate: false }, () => {
                                     setTimeout(() => {
-                                        this.props.closemodal();
+                                        this.props.closeModal();
                                     }, 300);
                                 })
                             }
