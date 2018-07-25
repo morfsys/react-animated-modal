@@ -2,7 +2,7 @@
     "name": "react-animated-modal",
     "version": "1.0.7",
     "description": "Animated react modal",
-    "main": "build/index.js",
+    "main": "build/index",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "webpack --watch",

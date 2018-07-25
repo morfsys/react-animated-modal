@@ -15,7 +15,6 @@ export default class Modal extends React.Component {
         }, 1);
     }
     render() {
-        let { closemodal } = this.props;
         let { animate } = this.state;
         return (
             <React.Fragment>
@@ -33,7 +32,7 @@ export default class Modal extends React.Component {
                             onClick={() =>
                                 this.setState({ animate: false }, () => {
                                     setTimeout(() => {
-                                        closemodal();
+                                        this.props.closemodal();
                                     }, 300);
                                 })
                             }
