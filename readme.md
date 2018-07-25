@@ -23,7 +23,9 @@ export default class App extends React.Component {
                         Some text inside modal goes here...
                     </Modal>
                 ) : null}
-                <div>Some text below modal</div>
+                <div onClick={() => this.setState({ showModal: true })}>
+                    Open Modal
+                </div>
             </div>
         );
     }
