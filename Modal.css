@@ -1,0 +1,67 @@
+.zay-modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    z-index: 101;
+}
+.zay-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 102;
+    background-color: #333;
+    opacity: 0.1;
+}
+.animate-modal-overlay-enter {
+    opacity: 0.1;
+}
+.animate-modal-overlay-enter-active {
+    opacity: 0.9;
+    transition: all 300ms cubic-bezier(0, 1, 0.5, 1);
+}
+.animate-modal-overlay-enter-done {
+    opacity: 0.9;
+}
+.animate-modal-overlay-exit {
+    opacity: 0.9;
+}
+.animate-modal-overlay-exit-active {
+    opacity: 0;
+    transition: all 300ms cubic-bezier(0, 1, 0.5, 1);
+}
+.zay-modal-body {
+    position: absolute;
+    top: -1000px;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 103;
+    width: 400px;
+    min-height: 200px;
+}
+.animate-modal-body-enter {
+    top: -1000px;
+}
+.animate-modal-body-enter-active {
+    top: 10px;
+    transition: all 300ms cubic-bezier(0, 1, 0.5, 1);
+}
+.animate-modal-body-enter-done {
+    top: 10px;
+}
+.animate-modal-body-exit {
+    top: 10px;
+}
+.animate-modal-body-exit-active {
+    top: 1500px;
+    transition: all 300ms cubic-bezier(0.92, 0.71, 0, 1.03);
+}
+@media only screen and (max-width: 600px) {
+    .zay-modal-body {
+        width: 90%;
+    }
+}
