@@ -5,7 +5,7 @@ npm install --save react-animated-modal
 ```
 
 ```javascript
-import React from "react":
+import React from "react";
 import Modal from "react-animated-modal";
 
 export default class App extends React.Component {
@@ -23,7 +23,7 @@ export default class App extends React.Component {
                         Some text inside modal goes here...
                     </Modal>
                 ) : null}
-				<div>Some text below modal</div>
+                <div>Some text below modal</div>
             </div>
         );
     }

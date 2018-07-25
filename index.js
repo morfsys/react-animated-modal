@@ -4,7 +4,7 @@ import { CSSTransition } from "react-transition-group";
 
 export default class Modal extends React.Component {
     state = {
-        animate
+        animate: false
     };
     componentDidMount() {
         setTimeout(() => {
