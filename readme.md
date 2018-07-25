@@ -32,6 +32,6 @@ export default class App extends React.Component {
 }
 ```
 
-You can add a custom close button inside Modal body and trigger the modal to close by calling `closeModal()` function which is received from props.
+You can add a custom close button inside Modal body and trigger the modal to close by calling `this.props.closemodal()` function which is received from props.
 
 I will keep on adding more animations to the library. All PR requests are welcome!
