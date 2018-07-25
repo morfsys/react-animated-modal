@@ -3,9 +3,12 @@ import "./Modal.css";
 import { CSSTransition } from "react-transition-group";
 
 export default class Modal extends React.Component {
-    state = {
-        animate: false
-    };
+    constructor() {
+        super();
+        this.state = {
+            animate: false
+        };
+    }
     componentDidMount() {
         setTimeout(() => {
             this.setState({ animate: true });
