@@ -3,11 +3,21 @@ import "./Modal.css";
 import { CSSTransition } from "react-transition-group";
 
 export default class Modal extends React.Component {
+    state = {
+        animate
+    };
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({ animate: true });
+        }, 1);
+    }
     render() {
+        let { closemodal } = this.props;
+        let { animate } = this.state;
         return (
             <React.Fragment>
                 <div
-                    className="zay-modal"
+                    className="react-modal"
                     style={{ display: animate ? "flex" : "none" }}
                 >
                     <CSSTransition
@@ -16,11 +26,11 @@ export default class Modal extends React.Component {
                         classNames="animate-modal-overlay"
                     >
                         <div
-                            className="zay-modal-overlay"
+                            className="react-modal-overlay"
                             onClick={() =>
                                 this.setState({ animate: false }, () => {
                                     setTimeout(() => {
-                                        this.props.closemodal();
+                                        closemodal();
                                     }, 300);
                                 })
                             }
@@ -31,7 +41,7 @@ export default class Modal extends React.Component {
                         timeout={300}
                         classNames="animate-modal-body"
                     >
-                        <div className="zay-modal-body">
+                        <div className="react-modal-body">
                             {this.props.children}
                         </div>
                     </CSSTransition>
