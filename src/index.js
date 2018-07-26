@@ -16,7 +16,6 @@ export default class Modal extends React.Component {
     }
     render() {
         let { animate } = this.state;
-        let { closemodal } = this.props;
         let type = undefined;
         if (this.props.type !== undefined) {
             type = this.props.type;
@@ -34,7 +33,7 @@ export default class Modal extends React.Component {
                             onClick={() =>
                                 this.setState({ animate: false }, () => {
                                     setTimeout(() => {
-                                        closemodal();
+                                        this.props.closemodal();
                                     }, 500);
                                 })
                             }
