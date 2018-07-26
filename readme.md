@@ -1,8 +1,10 @@
-Usage:
+# Installation:
 
 ```javascript
 npm install --save react-animated-modal
 ```
+
+# Usage
 
 ```javascript
 import React from "react";
@@ -34,4 +36,12 @@ export default class App extends React.Component {
 
 You can add a custom close button inside Modal body and trigger the modal to close by calling `this.props.closemodal()` function which is received from props.
 
-I will keep on adding more animations to the library. All PR requests are welcome!
+# Valid props
+
+| Prop name               | Type     | Accepted values                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ----------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| visible (required)      | boolean  | true / false                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| closemodal() (required) | function | --                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| type                    | enum     | bounce, flash, pulse, rubberBand, shake, swing, tada, wobble, jello, bounceIn, bounceInDown, bounceInLeft, bounceInRight, bounceInUp, fadeIn, fadeInDown, fadeInLeft, fadeInRight, fadeInUp, fadeInUpBig, flip, flipInX, flipInY, lightSpeedIn, rotateIn, rotateInDownLeft, rotateInDownRight, rotateInUpLeft, rotateInUpRight, slideInUp, slideInDown, slideInLeft, slideInRight, zoomIn, zoomInDown, zoomInLeft, zoomInRight, zoomInUp, hinge, jackInTheBox, rollIn |
+
+I will add ability to customize the modal soon. All PRs are welcome! :simple_smile:

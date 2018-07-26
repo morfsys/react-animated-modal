@@ -1,3 +1,4 @@
+@import "Animate.css";
 .react-modal {
     position: fixed;
     display: flex;
@@ -22,7 +23,7 @@
 }
 .animate-modal-overlay-enter-active {
     opacity: 0.9;
-    transition: all 300ms cubic-bezier(0, 1, 0.5, 1);
+    transition: all 500ms cubic-bezier(0, 1, 0.5, 1);
 }
 .animate-modal-overlay-enter-done {
     opacity: 0.9;
@@ -32,34 +33,361 @@
 }
 .animate-modal-overlay-exit-active {
     opacity: 0;
-    transition: all 300ms cubic-bezier(0, 1, 0.5, 1);
+    transition: all 500ms cubic-bezier(0, 1, 0.5, 1);
 }
 .react-modal-body {
-    position: absolute;
-    top: -1000px;
+    /* position: absolute;
+    top: -1000px; */
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 4px;
     z-index: 103;
     width: 400px;
     min-height: 200px;
 }
-.animate-modal-body-enter {
-    top: -1000px;
+
+/* Animations from Animates.css */
+.bounce-enter-active {
+    -webkit-animation: bounce 500ms infinite;
+    animation: bounce 500ms infinite;
 }
-.animate-modal-body-enter-active {
-    top: 10px;
-    transition: all 300ms cubic-bezier(0, 1, 0.5, 1);
+.bounce-exit-active {
+    -webkit-animation: bounce 500ms infinite;
+    animation: bounce 500ms infinite;
 }
-.animate-modal-body-enter-done {
-    top: 10px;
+
+.flash-enter-active {
+    -webkit-animation: flash 500ms infinite;
+    animation: flash 500ms infinite;
 }
-.animate-modal-body-exit {
-    top: 10px;
+.flash-exit-active {
+    -webkit-animation: flash 500ms infinite;
+    animation: flash 500ms infinite;
 }
-.animate-modal-body-exit-active {
-    top: 1500px;
-    transition: all 300ms cubic-bezier(0.92, 0.71, 0, 1.03);
+
+.pulse-enter-active {
+    -webkit-animation: pulse 500ms infinite;
+    animation: pulse 500ms infinite;
 }
+.pulse-exit-active {
+    -webkit-animation: pulse 500ms infinite;
+    animation: pulse 500ms infinite;
+}
+
+.rubberBand-enter-active {
+    -webkit-animation: rubberBand 500ms infinite;
+    animation: rubberBand 500ms infinite;
+}
+.rubberBand-exit-active {
+    -webkit-animation: rubberBand 500ms infinite;
+    animation: rubberBand 500ms infinite;
+}
+
+.shake-enter-active {
+    -webkit-animation: shake 500ms infinite;
+    animation: shake 500ms infinite;
+}
+.shake-exit-active {
+    -webkit-animation: shake 500ms infinite;
+    animation: shake 500ms infinite;
+}
+
+.swing-enter-active {
+    -webkit-animation: swing 500ms infinite;
+    animation: swing 500ms infinite;
+}
+.swing-exit-active {
+    -webkit-animation: swing 500ms infinite;
+    animation: swing 500ms infinite;
+}
+
+.tada-enter-active {
+    -webkit-animation: tada 500ms infinite;
+    animation: tada 500ms infinite;
+}
+.tada-exit-active {
+    -webkit-animation: tada 500ms infinite;
+    animation: tada 500ms infinite;
+}
+
+.wobble-enter-active {
+    -webkit-animation: wobble 500ms infinite;
+    animation: wobble 500ms infinite;
+}
+.wobble-exit-active {
+    -webkit-animation: wobble 500ms infinite;
+    animation: wobble 500ms infinite;
+}
+
+.jello-enter-active {
+    -webkit-animation: jello 500ms infinite;
+    animation: jello 500ms infinite;
+}
+.jello-exit-active {
+    -webkit-animation: jello 500ms infinite;
+    animation: jello 500ms infinite;
+}
+
+.bounceIn-enter-active {
+    -webkit-animation: bounceIn 500ms infinite;
+    animation: bounceIn 500ms infinite;
+}
+.bounceIn-exit-active {
+    -webkit-animation: bounceOut 500ms infinite;
+    animation: bounceOut 500ms infinite;
+}
+
+.bounceInDown-enter-active {
+    -webkit-animation: bounceInDown 500ms infinite;
+    animation: bounceInDown 500ms infinite;
+}
+.bounceInDown-exit-active {
+    -webkit-animation: bounceOutDown 500ms infinite;
+    animation: bounceOutDown 500ms infinite;
+}
+
+.bounceInLeft-enter-active {
+    -webkit-animation: bounceInLeft 500ms infinite;
+    animation: bounceInLeft 500ms infinite;
+}
+.bounceInLeft-exit-active {
+    -webkit-animation: bounceOutRight 500ms infinite;
+    animation: bounceOutRight 500ms infinite;
+}
+
+.bounceInRight-enter-active {
+    -webkit-animation: bounceInRight 500ms infinite;
+    animation: bounceInRight 500ms infinite;
+}
+.bounceInRight-exit-active {
+    -webkit-animation: bounceOutLeft 500ms infinite;
+    animation: bounceOutLeft 500ms infinite;
+}
+
+.bounceInUp-enter-active {
+    -webkit-animation: bounceInUp 500ms infinite;
+    animation: bounceInUp 500ms infinite;
+}
+.bounceInUp-exit-active {
+    -webkit-animation: bounceOutUp 500ms infinite;
+    animation: bounceOutUp 500ms infinite;
+}
+
+.fadeIn-enter-active {
+    -webkit-animation: fadeIn 500ms infinite;
+    animation: fadeIn 500ms infinite;
+}
+.fadeIn-exit-active {
+    -webkit-animation: fadeOut 500ms infinite;
+    animation: fadeOut 500ms infinite;
+}
+
+.fadeInDown-enter-active {
+    -webkit-animation: fadeInDown 500ms infinite;
+    animation: fadeInDown 500ms infinite;
+}
+.fadeInDown-exit-active {
+    -webkit-animation: fadeOutDown 500ms infinite;
+    animation: fadeOutDown 500ms infinite;
+}
+
+.fadeInLeft-enter-active {
+    -webkit-animation: fadeInLeft 500ms infinite;
+    animation: fadeInLeft 500ms infinite;
+}
+.fadeInLeft-exit-active {
+    -webkit-animation: fadeOutRight 500ms infinite;
+    animation: fadeOutRight 500ms infinite;
+}
+
+.fadeInUp-enter-active {
+    -webkit-animation: fadeInUp 500ms infinite;
+    animation: fadeInUp 500ms infinite;
+}
+.fadeInUp-exit-active {
+    -webkit-animation: fadeOutUp 500ms infinite;
+    animation: fadeOutUp 500ms infinite;
+}
+
+.flip-enter-active {
+    -webkit-animation: flip 500ms infinite;
+    animation: flip 500ms infinite;
+}
+.flip-exit-active {
+    -webkit-animation: flip 500ms infinite;
+    animation: flip 500ms infinite;
+}
+
+.flipInX-enter-active {
+    -webkit-animation: flipInX 500ms infinite;
+    animation: flipInX 500ms infinite;
+}
+.flipInX-exit-active {
+    -webkit-animation: flipOutX 500ms infinite;
+    animation: flipOutX 500ms infinite;
+}
+
+.flipInY-enter-active {
+    -webkit-animation: flipInY 500ms infinite;
+    animation: flipInY 500ms infinite;
+}
+.flipInY-exit-active {
+    -webkit-animation: flipOutY 500ms infinite;
+    animation: flipOutY 500ms infinite;
+}
+
+.lightSpeedIn-enter-active {
+    -webkit-animation: lightSpeedIn 500ms infinite;
+    animation: lightSpeedIn 500ms infinite;
+}
+.lightSpeedIn-exit-active {
+    -webkit-animation: lightSpeedOut 500ms infinite;
+    animation: lightSpeedOut 500ms infinite;
+}
+
+.rotateIn-enter-active {
+    -webkit-animation: rotateIn 500ms infinite;
+    animation: rotateIn 500ms infinite;
+}
+.rotateIn-exit-active {
+    -webkit-animation: rotateOut 500ms infinite;
+    animation: rotateOut 500ms infinite;
+}
+
+.rotateInDownLeft-enter-active {
+    -webkit-animation: rotateInDownLeft 500ms infinite;
+    animation: rotateInDownLeft 500ms infinite;
+}
+.rotateInDownLeft-exit-active {
+    -webkit-animation: rotateOutDownLeft 500ms infinite;
+    animation: rotateOutDownLeft 500ms infinite;
+}
+.rotateInDownRight-enter-active {
+    -webkit-animation: rotateInDownRight 500ms infinite;
+    animation: rotateInDownRight 500ms infinite;
+}
+.rotateInDownRight-exit-active {
+    -webkit-animation: rotateOutDownRight 500ms infinite;
+    animation: rotateOutDownRight 500ms infinite;
+}
+.rotateInUpLeft-enter-active {
+    -webkit-animation: rotateInUpLeft 500ms infinite;
+    animation: rotateInUpLeft 500ms infinite;
+}
+.rotateInUpLeft-exit-active {
+    -webkit-animation: rotateOutUpLeft 500ms infinite;
+    animation: rotateOutUpLeft 500ms infinite;
+}
+.rotateInUpRight-enter-active {
+    -webkit-animation: rotateInUpRight 500ms infinite;
+    animation: rotateInUpRight 500ms infinite;
+}
+.rotateInUpRight-exit-active {
+    -webkit-animation: rotateOutUpRight 500ms infinite;
+    animation: rotateOutUpRight 500ms infinite;
+}
+.slideInUp-enter-active {
+    -webkit-animation: slideInUp 500ms infinite;
+    animation: slideInUp 500ms infinite;
+}
+.slideInUp-exit-active {
+    -webkit-animation: slideOutUp 500ms infinite;
+    animation: slideOutUp 500ms infinite;
+}
+.slideInDown-enter-active {
+    -webkit-animation: slideInDown 500ms infinite;
+    animation: slideInDown 500ms infinite;
+}
+.slideInDown-exit-active {
+    -webkit-animation: slideOutDown 500ms infinite;
+    animation: slideOutDown 500ms infinite;
+}
+.slideInLeft-enter-active {
+    -webkit-animation: slideInLeft 500ms infinite;
+    animation: slideInLeft 500ms infinite;
+}
+.slideInLeft-exit-active {
+    -webkit-animation: slideOutRight 500ms infinite;
+    animation: slideOutRight 500ms infinite;
+}
+.slideInRight-enter-active {
+    -webkit-animation: slideInRight 500ms infinite;
+    animation: slideInRight 500ms infinite;
+}
+.slideInRight-exit-active {
+    -webkit-animation: slideOutLeft 500ms infinite;
+    animation: slideOutLeft 500ms infinite;
+}
+.zoomIn-enter-active {
+    -webkit-animation: zoomIn 500ms infinite;
+    animation: zoomIn 500ms infinite;
+}
+.zoomIn-exit-active {
+    -webkit-animation: zoomOut 500ms infinite;
+    animation: zoomIn 500ms infinite;
+}
+.zoomInDown-enter-active {
+    -webkit-animation: zoomInDown 500ms infinite;
+    animation: zoomInDown 500ms infinite;
+}
+.zoomInDown-exit-active {
+    -webkit-animation: zoomOutDown 500ms infinite;
+    animation: zoomOutDown 500ms infinite;
+}
+
+.zoomInLeft-enter-active {
+    -webkit-animation: zoomInLeft 500ms infinite;
+    animation: zoomInLeft 500ms infinite;
+}
+.zoomInLeft-exit-active {
+    -webkit-animation: zoomOutRight 500ms infinite;
+    animation: zoomOutRight 500ms infinite;
+}
+
+.zoomInRight-enter-active {
+    -webkit-animation: zoomInRight 500ms infinite;
+    animation: zoomInRight 500ms infinite;
+}
+.zoomInRight-exit-active {
+    -webkit-animation: zoomOutLeft 500ms infinite;
+    animation: zoomOutLeft 500ms infinite;
+}
+
+.zoomInUp-enter-active {
+    -webkit-animation: zoomInUp 500ms infinite;
+    animation: zoomInUp 500ms infinite;
+}
+.zoomInUp-exit-active {
+    -webkit-animation: zoomOutUp 500ms infinite;
+    animation: zoomOutUp 500ms infinite;
+}
+
+.hinge-enter-active {
+    -webkit-animation: hinge 500ms infinite;
+    animation: hinge 500ms infinite;
+}
+.hinge-exit-active {
+    -webkit-animation: hinge 500ms infinite;
+    animation: hinge 500ms infinite;
+}
+
+.jackInTheBox-enter-active {
+    -webkit-animation: jackInTheBox 500ms infinite;
+    animation: jackInTheBox 500ms infinite;
+}
+.jackInTheBox-exit-active {
+    -webkit-animation: jackInTheBox 500ms infinite;
+    animation: jackInTheBox 500ms infinite;
+}
+
+.rollIn-enter-active {
+    -webkit-animation: rollIn 500ms infinite;
+    animation: 500ms infinite;
+}
+.rollIn-exit-active {
+    -webkit-animation: rollOut 500ms infinite;
+    animation: rollOut 500ms infinite;
+}
+
 @media only screen and (max-width: 600px) {
     .react-modal-body {
         width: 90%;

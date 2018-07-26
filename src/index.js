@@ -16,39 +16,45 @@ export default class Modal extends React.Component {
     }
     render() {
         let { animate } = this.state;
-        return (
-            <React.Fragment>
-                <div
-                    className="react-modal"
-                    style={{ display: animate ? "flex" : "none" }}
-                >
-                    <CSSTransition
-                        in={animate}
-                        timeout={300}
-                        classNames="animate-modal-overlay"
-                    >
-                        <div
-                            className="react-modal-overlay"
-                            onClick={() =>
-                                this.setState({ animate: false }, () => {
-                                    setTimeout(() => {
-                                        this.props.closemodal();
-                                    }, 300);
-                                })
-                            }
-                        />
-                    </CSSTransition>
-                    <CSSTransition
-                        in={animate}
-                        timeout={300}
-                        classNames="animate-modal-body"
-                    >
-                        <div className="react-modal-body">
-                            {this.props.children}
-                        </div>
-                    </CSSTransition>
-                </div>
-            </React.Fragment>
-        );
+        let { visible, closemodal } = this.props;
+        let type = undefined;
+        if (this.props.type !== undefined) {
+            type = this.props.type;
+        }
+        if (visible) {
+            return (
+                <React.Fragment>
+                    <div className="react-modal">
+                        <CSSTransition
+                            in={animate}
+                            timeout={500}
+                            classNames="animate-modal-overlay"
+                        >
+                            <div
+                                className="react-modal-overlay"
+                                onClick={() =>
+                                    this.setState({ animate: false }, () => {
+                                        setTimeout(() => {
+                                            closemodal();
+                                        }, 500);
+                                    })
+                                }
+                            />
+                        </CSSTransition>
+                        <CSSTransition
+                            in={animate}
+                            timeout={500}
+                            classNames={type !== undefined ? type : "bounce"}
+                        >
+                            <div className="react-modal-body">
+                                {this.props.children}
+                            </div>
+                        </CSSTransition>
+                    </div>
+                </React.Fragment>
+            );
+        } else {
+            return null;
+        }
     }
 }
