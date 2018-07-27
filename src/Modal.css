@@ -583,7 +583,7 @@
 }
 .rollIn-enter-active {
     -webkit-animation: rollIn 500ms infinite;
-    animation: 500ms infinite;
+    animation: rollIn 500ms infinite;
 }
 .rollIn-exit-active {
     -webkit-animation: rollOut 500ms infinite;

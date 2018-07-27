@@ -42,7 +42,7 @@ export default class Modal extends React.Component {
                     <CSSTransition
                         in={animate}
                         timeout={500}
-                        classNames={type !== undefined ? type : "bounce"}
+                        classNames={type !== undefined ? type : "flipInX"}
                     >
                         <div className="react-modal-body">
                             {this.props.children}
