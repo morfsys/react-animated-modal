@@ -1,6 +1,6 @@
 # Demo
 
-![Demo Gif](https://media.giphy.com/media/ftdW7ZTjjXn1gj9GvB/giphy.gif)
+<img src="https://media.giphy.com/media/ftdW7ZTjjXn1gj9GvB/giphy.gif" width="300" />
 
 # Installation:
 
