@@ -22,7 +22,7 @@ export default class App extends React.Component {
                     <Modal
                         closemodal={() => this.setState({ showModal: false })}
                     >
-                        Some text inside modal goes here...
+                        Some text or JSX inside modal goes here...
                     </Modal>
                 ) : null}
                 <div onClick={() => this.setState({ showModal: true })}>
@@ -33,8 +33,6 @@ export default class App extends React.Component {
     }
 }
 ```
-
-You can add a custom close button inside Modal body and trigger the modal to close by calling `this.props.closemodal()` function which is received from props.
 
 # Valid props
 
