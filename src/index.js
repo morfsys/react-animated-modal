@@ -25,7 +25,7 @@ export default class Modal extends React.Component {
                 <div className="react-modal">
                     <CSSTransition
                         in={animate}
-                        timeout={500}
+                        timeout={550}
                         classNames="animate-modal-overlay"
                     >
                         <div
@@ -34,7 +34,7 @@ export default class Modal extends React.Component {
                                 this.setState({ animate: false }, () => {
                                     setTimeout(() => {
                                         this.props.closemodal();
-                                    }, 450);
+                                    }, 550);
                                 })
                             }
                         />
