@@ -1,6 +1,6 @@
 # Demo
 
-![Alt Text](https://media.giphy.com/media/7NRninbS5gdQ3Jx9y0/giphy.gif)
+![Demo Gif](https://media.giphy.com/media/ftdW7ZTjjXn1gj9GvB/giphy.gif)
 
 # Installation:
 
