@@ -35,17 +35,6 @@
     opacity: 0;
     transition: all 500ms cubic-bezier(0, 1, 0.5, 1);
 }
-.ram-add-enter-active {
-    opacity: 0.9;
-    transition: all 500ms cubic-bezier(0, 1, 0.5, 1);
-}
-.ram-add-exit-active {
-    opacity: 0.1;
-    transition: all 500ms cubic-bezier(0, 1, 0.5, 1);
-}
-.ram-add-exit-done {
-    opacity: 0;
-}
 .react-modal-body {
     /* position: absolute;
     top: -1000px; */

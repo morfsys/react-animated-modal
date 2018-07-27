@@ -42,11 +42,7 @@ export default class Modal extends React.Component {
                     <CSSTransition
                         in={animate}
                         timeout={500}
-                        classNames={
-                            type !== undefined
-                                ? type + "ram-add"
-                                : "bounce ram-add"
-                        }
+                        classNames={type !== undefined ? type : "bounce"}
                     >
                         <div className="react-modal-body">
                             {this.props.children}
