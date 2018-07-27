@@ -46,6 +46,9 @@
 }
 
 /* Animations from Animates.css */
+.bounce-enter {
+    display: block;
+}
 .bounce-enter-active {
     -webkit-animation: bounce 500ms infinite;
     animation: bounce 500ms infinite;
@@ -54,7 +57,12 @@
     -webkit-animation: bounce 500ms infinite;
     animation: bounce 500ms infinite;
 }
-
+.bounce-exit-done {
+    display: none;
+}
+.flash-enter {
+    display: block;
+}
 .flash-enter-active {
     -webkit-animation: flash 500ms infinite;
     animation: flash 500ms infinite;
@@ -63,7 +71,12 @@
     -webkit-animation: flash 500ms infinite;
     animation: flash 500ms infinite;
 }
-
+.flash-exit-done {
+    display: none;
+}
+.pulse-enter {
+    display: block;
+}
 .pulse-enter-active {
     -webkit-animation: pulse 500ms infinite;
     animation: pulse 500ms infinite;
@@ -72,7 +85,12 @@
     -webkit-animation: pulse 500ms infinite;
     animation: pulse 500ms infinite;
 }
-
+.pulse-exit-done {
+    display: none;
+}
+.rubberBand-enter {
+    display: block;
+}
 .rubberBand-enter-active {
     -webkit-animation: rubberBand 500ms infinite;
     animation: rubberBand 500ms infinite;
@@ -81,7 +99,12 @@
     -webkit-animation: rubberBand 500ms infinite;
     animation: rubberBand 500ms infinite;
 }
-
+.rubberBand-exit-done {
+    display: none;
+}
+.shake-enter {
+    display: block;
+}
 .shake-enter-active {
     -webkit-animation: shake 500ms infinite;
     animation: shake 500ms infinite;
@@ -90,7 +113,12 @@
     -webkit-animation: shake 500ms infinite;
     animation: shake 500ms infinite;
 }
-
+.shake-exit-done {
+    display: none;
+}
+.swing-enter {
+    display: block;
+}
 .swing-enter-active {
     -webkit-animation: swing 500ms infinite;
     animation: swing 500ms infinite;
@@ -99,7 +127,12 @@
     -webkit-animation: swing 500ms infinite;
     animation: swing 500ms infinite;
 }
-
+.swing-exit-done {
+    display: none;
+}
+.tada-enter {
+    display: block;
+}
 .tada-enter-active {
     -webkit-animation: tada 500ms infinite;
     animation: tada 500ms infinite;
@@ -108,7 +141,12 @@
     -webkit-animation: tada 500ms infinite;
     animation: tada 500ms infinite;
 }
-
+.tada-exit-done {
+    display: none;
+}
+.wobble-enter {
+    display: block;
+}
 .wobble-enter-active {
     -webkit-animation: wobble 500ms infinite;
     animation: wobble 500ms infinite;
@@ -117,7 +155,12 @@
     -webkit-animation: wobble 500ms infinite;
     animation: wobble 500ms infinite;
 }
-
+.wobble-exit-done {
+    display: none;
+}
+.jello-enter {
+    display: block;
+}
 .jello-enter-active {
     -webkit-animation: jello 500ms infinite;
     animation: jello 500ms infinite;
@@ -126,7 +169,12 @@
     -webkit-animation: jello 500ms infinite;
     animation: jello 500ms infinite;
 }
-
+.jello-exit-done {
+    display: none;
+}
+.bounceIn-enter {
+    display: block;
+}
 .bounceIn-enter-active {
     -webkit-animation: bounceIn 500ms infinite;
     animation: bounceIn 500ms infinite;
@@ -135,7 +183,12 @@
     -webkit-animation: bounceOut 500ms infinite;
     animation: bounceOut 500ms infinite;
 }
-
+.bounceIn-exit-done {
+    display: none;
+}
+.bounceInDown-enter {
+    display: block;
+}
 .bounceInDown-enter-active {
     -webkit-animation: bounceInDown 500ms infinite;
     animation: bounceInDown 500ms infinite;
@@ -144,7 +197,12 @@
     -webkit-animation: bounceOutDown 500ms infinite;
     animation: bounceOutDown 500ms infinite;
 }
-
+.bounceInDown-exit-done {
+    display: none;
+}
+.bounceInLeft-enter {
+    display: block;
+}
 .bounceInLeft-enter-active {
     -webkit-animation: bounceInLeft 500ms infinite;
     animation: bounceInLeft 500ms infinite;
@@ -153,7 +211,12 @@
     -webkit-animation: bounceOutRight 500ms infinite;
     animation: bounceOutRight 500ms infinite;
 }
-
+.bounceInLeft-exit-done {
+    display: none;
+}
+.bounceInRight-enter {
+    display: block;
+}
 .bounceInRight-enter-active {
     -webkit-animation: bounceInRight 500ms infinite;
     animation: bounceInRight 500ms infinite;
@@ -162,7 +225,12 @@
     -webkit-animation: bounceOutLeft 500ms infinite;
     animation: bounceOutLeft 500ms infinite;
 }
-
+.bounceInRight-exit-done {
+    display: none;
+}
+.bounceInUp-enter {
+    display: block;
+}
 .bounceInUp-enter-active {
     -webkit-animation: bounceInUp 500ms infinite;
     animation: bounceInUp 500ms infinite;
@@ -171,7 +239,12 @@
     -webkit-animation: bounceOutUp 500ms infinite;
     animation: bounceOutUp 500ms infinite;
 }
-
+.bounceInUp-exit-done {
+    display: none;
+}
+.fadeIn-enter {
+    display: block;
+}
 .fadeIn-enter-active {
     -webkit-animation: fadeIn 500ms infinite;
     animation: fadeIn 500ms infinite;
@@ -180,7 +253,12 @@
     -webkit-animation: fadeOut 500ms infinite;
     animation: fadeOut 500ms infinite;
 }
-
+.fadeIn-exit-done {
+    display: none;
+}
+.fadeInDown-enter {
+    display: block;
+}
 .fadeInDown-enter-active {
     -webkit-animation: fadeInDown 500ms infinite;
     animation: fadeInDown 500ms infinite;
@@ -189,7 +267,12 @@
     -webkit-animation: fadeOutDown 500ms infinite;
     animation: fadeOutDown 500ms infinite;
 }
-
+.fadeInDown-exit-done {
+    display: none;
+}
+.fadeInLeft-enter {
+    display: block;
+}
 .fadeInLeft-enter-active {
     -webkit-animation: fadeInLeft 500ms infinite;
     animation: fadeInLeft 500ms infinite;
@@ -198,7 +281,12 @@
     -webkit-animation: fadeOutRight 500ms infinite;
     animation: fadeOutRight 500ms infinite;
 }
-
+.fadeInLeft-exit-done {
+    display: none;
+}
+.fadeInUp-enter {
+    display: block;
+}
 .fadeInUp-enter-active {
     -webkit-animation: fadeInUp 500ms infinite;
     animation: fadeInUp 500ms infinite;
@@ -207,7 +295,12 @@
     -webkit-animation: fadeOutUp 500ms infinite;
     animation: fadeOutUp 500ms infinite;
 }
-
+.fadeInUp-exit-done {
+    display: none;
+}
+.flip-enter {
+    display: block;
+}
 .flip-enter-active {
     -webkit-animation: flip 500ms infinite;
     animation: flip 500ms infinite;
@@ -216,7 +309,12 @@
     -webkit-animation: flip 500ms infinite;
     animation: flip 500ms infinite;
 }
-
+.flip-exit-done {
+    display: none;
+}
+.flipInX-enter {
+    display: block;
+}
 .flipInX-enter-active {
     -webkit-animation: flipInX 500ms infinite;
     animation: flipInX 500ms infinite;
@@ -225,7 +323,12 @@
     -webkit-animation: flipOutX 500ms infinite;
     animation: flipOutX 500ms infinite;
 }
-
+.flipInX-exit-done {
+    display: none;
+}
+.flipInY-enter {
+    display: block;
+}
 .flipInY-enter-active {
     -webkit-animation: flipInY 500ms infinite;
     animation: flipInY 500ms infinite;
@@ -234,7 +337,12 @@
     -webkit-animation: flipOutY 500ms infinite;
     animation: flipOutY 500ms infinite;
 }
-
+.flipInY-exit-done {
+    display: none;
+}
+.lightSpeedIn-enter {
+    display: block;
+}
 .lightSpeedIn-enter-active {
     -webkit-animation: lightSpeedIn 500ms infinite;
     animation: lightSpeedIn 500ms infinite;
@@ -243,7 +351,12 @@
     -webkit-animation: lightSpeedOut 500ms infinite;
     animation: lightSpeedOut 500ms infinite;
 }
-
+.lightSpeedIn-exit-done {
+    display: none;
+}
+.rotateIn-enter {
+    display: block;
+}
 .rotateIn-enter-active {
     -webkit-animation: rotateIn 500ms infinite;
     animation: rotateIn 500ms infinite;
@@ -252,7 +365,12 @@
     -webkit-animation: rotateOut 500ms infinite;
     animation: rotateOut 500ms infinite;
 }
-
+.rotateIn-exit-done {
+    display: none;
+}
+.rotateInDownLeft-enter {
+    display: block;
+}
 .rotateInDownLeft-enter-active {
     -webkit-animation: rotateInDownLeft 500ms infinite;
     animation: rotateInDownLeft 500ms infinite;
@@ -260,6 +378,12 @@
 .rotateInDownLeft-exit-active {
     -webkit-animation: rotateOutDownLeft 500ms infinite;
     animation: rotateOutDownLeft 500ms infinite;
+}
+.rotateInDownLeft-exit-done {
+    display: none;
+}
+.rotateInDownRight-enter {
+    display: block;
 }
 .rotateInDownRight-enter-active {
     -webkit-animation: rotateInDownRight 500ms infinite;
@@ -269,6 +393,12 @@
     -webkit-animation: rotateOutDownRight 500ms infinite;
     animation: rotateOutDownRight 500ms infinite;
 }
+.rotateInDownRight-exit-done {
+    display: none;
+}
+.rotateInUpLeft-enter {
+    display: block;
+}
 .rotateInUpLeft-enter-active {
     -webkit-animation: rotateInUpLeft 500ms infinite;
     animation: rotateInUpLeft 500ms infinite;
@@ -276,6 +406,12 @@
 .rotateInUpLeft-exit-active {
     -webkit-animation: rotateOutUpLeft 500ms infinite;
     animation: rotateOutUpLeft 500ms infinite;
+}
+.rotateInUpLeft-exit-done {
+    display: none;
+}
+.rotateInUpRight-enter {
+    display: block;
 }
 .rotateInUpRight-enter-active {
     -webkit-animation: rotateInUpRight 500ms infinite;
@@ -285,6 +421,12 @@
     -webkit-animation: rotateOutUpRight 500ms infinite;
     animation: rotateOutUpRight 500ms infinite;
 }
+.rotateInUpRight-exit-done {
+    display: none;
+}
+.slideInUp-enter {
+    display: block;
+}
 .slideInUp-enter-active {
     -webkit-animation: slideInUp 500ms infinite;
     animation: slideInUp 500ms infinite;
@@ -292,6 +434,12 @@
 .slideInUp-exit-active {
     -webkit-animation: slideOutUp 500ms infinite;
     animation: slideOutUp 500ms infinite;
+}
+.slideInUp-exit-done {
+    display: none;
+}
+.slideInDown-enter {
+    display: block;
 }
 .slideInDown-enter-active {
     -webkit-animation: slideInDown 500ms infinite;
@@ -301,6 +449,12 @@
     -webkit-animation: slideOutDown 500ms infinite;
     animation: slideOutDown 500ms infinite;
 }
+.slideInDown-exit-done {
+    display: none;
+}
+.slideInLeft-enter {
+    display: block;
+}
 .slideInLeft-enter-active {
     -webkit-animation: slideInLeft 500ms infinite;
     animation: slideInLeft 500ms infinite;
@@ -308,6 +462,12 @@
 .slideInLeft-exit-active {
     -webkit-animation: slideOutRight 500ms infinite;
     animation: slideOutRight 500ms infinite;
+}
+.slideInLeft-exit-done {
+    display: none;
+}
+.slideInRight-enter {
+    display: block;
 }
 .slideInRight-enter-active {
     -webkit-animation: slideInRight 500ms infinite;
@@ -317,6 +477,12 @@
     -webkit-animation: slideOutLeft 500ms infinite;
     animation: slideOutLeft 500ms infinite;
 }
+.slideInRight-exit-done {
+    display: none;
+}
+.zoomIn-enter {
+    display: block;
+}
 .zoomIn-enter-active {
     -webkit-animation: zoomIn 500ms infinite;
     animation: zoomIn 500ms infinite;
@@ -324,6 +490,12 @@
 .zoomIn-exit-active {
     -webkit-animation: zoomOut 500ms infinite;
     animation: zoomIn 500ms infinite;
+}
+.zoomIn-exit-done {
+    display: none;
+}
+.zoomInDown-enter {
+    display: block;
 }
 .zoomInDown-enter-active {
     -webkit-animation: zoomInDown 500ms infinite;
@@ -333,7 +505,12 @@
     -webkit-animation: zoomOutDown 500ms infinite;
     animation: zoomOutDown 500ms infinite;
 }
-
+.zoomInDown-exit-done {
+    display: none;
+}
+.zoomInLeft-enter {
+    display: block;
+}
 .zoomInLeft-enter-active {
     -webkit-animation: zoomInLeft 500ms infinite;
     animation: zoomInLeft 500ms infinite;
@@ -342,7 +519,12 @@
     -webkit-animation: zoomOutRight 500ms infinite;
     animation: zoomOutRight 500ms infinite;
 }
-
+.zoomInLeft-exit-done {
+    display: none;
+}
+.zoomInRight-enter {
+    display: block;
+}
 .zoomInRight-enter-active {
     -webkit-animation: zoomInRight 500ms infinite;
     animation: zoomInRight 500ms infinite;
@@ -351,7 +533,12 @@
     -webkit-animation: zoomOutLeft 500ms infinite;
     animation: zoomOutLeft 500ms infinite;
 }
-
+.zoomInRight-exit-done {
+    display: none;
+}
+.zoomInUp-enter {
+    display: block;
+}
 .zoomInUp-enter-active {
     -webkit-animation: zoomInUp 500ms infinite;
     animation: zoomInUp 500ms infinite;
@@ -360,7 +547,12 @@
     -webkit-animation: zoomOutUp 500ms infinite;
     animation: zoomOutUp 500ms infinite;
 }
-
+.zoomInUp-exit-done {
+    display: none;
+}
+.hinge-enter {
+    display: block;
+}
 .hinge-enter-active {
     -webkit-animation: hinge 500ms infinite;
     animation: hinge 500ms infinite;
@@ -369,7 +561,12 @@
     -webkit-animation: hinge 500ms infinite;
     animation: hinge 500ms infinite;
 }
-
+.hinge-exit-done {
+    display: none;
+}
+.jackInTheBox-enter {
+    display: block;
+}
 .jackInTheBox-enter-active {
     -webkit-animation: jackInTheBox 500ms infinite;
     animation: jackInTheBox 500ms infinite;
@@ -378,7 +575,12 @@
     -webkit-animation: jackInTheBox 500ms infinite;
     animation: jackInTheBox 500ms infinite;
 }
-
+.jackInTheBox-exit-done {
+    display: none;
+}
+.rollIn-enter {
+    display: block;
+}
 .rollIn-enter-active {
     -webkit-animation: rollIn 500ms infinite;
     animation: 500ms infinite;
@@ -387,7 +589,9 @@
     -webkit-animation: rollOut 500ms infinite;
     animation: rollOut 500ms infinite;
 }
-
+.rollIn-exit-done {
+    display: none;
+}
 @media only screen and (max-width: 600px) {
     .react-modal-body {
         width: 90%;
