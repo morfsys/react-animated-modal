@@ -6,50 +6,120 @@ export default class Modal extends React.Component {
     constructor() {
         super();
         this.state = {
-            animate: false
+            animateOverlay: false,
+            animateBody: false
         };
     }
     componentDidMount() {
-        setTimeout(() => {
-            this.setState({ animate: true });
-        }, 1);
+        if (this.props.visible) {
+            setTimeout(() => {
+                this.setState({ animateOverlay: true }, () => {
+                    setTimeout(() => {
+                        this.setState({ animateBody: true });
+                    }, 1);
+                });
+            }, 1);
+        } else {
+            setTimeout(() => {
+                this.setState({ animateOverlay: false }, () => {
+                    setTimeout(() => {
+                        this.setState({ animateBody: false });
+                    }, 1);
+                });
+            }, 1);
+        }
+    }
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.visible) {
+            setTimeout(() => {
+                this.setState({ animateOverlay: true }, () => {
+                    setTimeout(() => {
+                        this.setState({ animateBody: true });
+                    }, 1);
+                });
+            }, 1);
+        } else {
+            setTimeout(() => {
+                this.setState({ animateOverlay: false }, () => {
+                    setTimeout(() => {
+                        this.setState({ animateBody: false });
+                    }, 1);
+                });
+            }, 1);
+        }
     }
     render() {
-        let { animate } = this.state;
+        let { animateOverlay, animateBody } = this.state;
+        let { visible } = this.props;
         let type = undefined;
         if (this.props.type !== undefined) {
             type = this.props.type;
         }
-        return (
-            <React.Fragment>
-                <div className="react-modal">
-                    <CSSTransition
-                        in={animate}
-                        timeout={500}
-                        classNames="animate-modal-overlay"
-                    >
-                        <div
-                            className="react-modal-overlay"
-                            onClick={() =>
-                                this.setState({ animate: false }, () => {
-                                    setTimeout(() => {
-                                        this.props.closemodal();
-                                    }, 500);
-                                })
-                            }
-                        />
-                    </CSSTransition>
-                    <CSSTransition
-                        in={animate}
-                        timeout={500}
-                        classNames={type !== undefined ? type : "flipInX"}
-                    >
-                        <div className="react-modal-body">
-                            {this.props.children}
-                        </div>
-                    </CSSTransition>
-                </div>
-            </React.Fragment>
-        );
+        if (visible) {
+            return (
+                <React.Fragment>
+                    <div className="react-modal">
+                        <CSSTransition
+                            in={animateOverlay}
+                            timeout={500}
+                            classNames="animate-modal-overlay"
+                        >
+                            <div
+                                className="react-modal-overlay"
+                                onClick={() =>
+                                    // this.setState({ animate: false }, () => {
+                                    //     setTimeout(() => {
+                                    //         this.props.closemodal();
+                                    //     }, 500);
+                                    // })
+                                    this.setState(
+                                        { animateBody: false },
+                                        () => {
+                                            this.setState(
+                                                { animateOverlay: false },
+                                                () => {
+                                                    setTimeout(() => {
+                                                        this.props.closemodal();
+                                                    }, 501);
+                                                }
+                                            );
+                                        }
+                                    )
+                                }
+                            />
+                        </CSSTransition>
+                        <CSSTransition
+                            in={animateBody}
+                            timeout={450}
+                            classNames={type !== undefined ? type : "flipInX"}
+                        >
+                            <div className="react-modal-body">
+                                <div
+                                    className="react-modal-body-close"
+                                    onClick={() =>
+                                        this.setState(
+                                            { animateBody: false },
+                                            () => {
+                                                this.setState(
+                                                    { animateOverlay: false },
+                                                    () => {
+                                                        setTimeout(() => {
+                                                            this.props.closemodal();
+                                                        }, 501);
+                                                    }
+                                                );
+                                            }
+                                        )
+                                    }
+                                />
+                                {this.props.children}
+                            </div>
+                        </CSSTransition>
+                    </div>
+                </React.Fragment>
+            );
+        } else {
+            return null;
+        }
     }
 }
