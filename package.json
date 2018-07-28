@@ -1,7 +1,7 @@
 {
     "name": "react-animated-modal",
     "version": "1.1.0",
-    "description": "Animated react modal",
+    "description": "Animated React Modal with 40 animations using CSSTransition and Animate.css.",
     "main": "build/index",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,6 +12,7 @@
         "animated",
         "react",
         "modal",
+        "with",
         "animations",
         "reactjs"
     ],

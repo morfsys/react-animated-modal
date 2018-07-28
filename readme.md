@@ -45,6 +45,7 @@ export default class App extends React.Component {
 | visible (required)      | boolean  | true / false                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | type                    | enum     | pulse, rubberBand, shake, swing, tada, wobble, jello, bounceIn, bounceInDown, bounceInLeft, bounceInRight, bounceInUp, fadeIn, fadeInDown, fadeInLeft, fadeInRight, fadeInUp, flip, flipInX, flipInY, lightSpeedIn, rotateIn, rotateInDownLeft, rotateInDownRight, rotateInUpLeft, rotateInUpRight, slideInUp, slideInDown, slideInLeft, slideInRight, zoomIn, zoomInDown, zoomInLeft, zoomInRight, zoomInUp, hinge, jackInTheBox, rollIn, bounce, flash |
 
-I will add the ability to customize modal body soon. All PRs are welcome!
+I will be adding more props soon.
+All PRs are welcome!
 
 Cheers!!!
